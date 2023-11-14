@@ -1,0 +1,233 @@
+.profile-card-wrapper {
+  display: flex;
+  padding: 3rem;
+  background-color: var(--secondary-background);
+  border-radius: 0.9375rem;
+  box-shadow: var(--shadow);
+  gap: 2.31rem;
+}
+
+.user-avatar {
+  width: 7.3125rem;
+  height: 7.3125rem;
+  border-radius: 50%;
+}
+
+.inner-user-avatar {
+  width: 7.3125rem;
+  height: 7.3125rem;
+  border-radius: 50%;
+  display: none;
+}
+
+.user-data-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.username-data-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.primary {
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.join-data {
+  margin-top: 0.3rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  color: var(--tertiary-font);
+}
+
+.username {
+  padding-top: 0.4rem;
+  color: var(--strong-blue);
+}
+
+.github-stats-wrapper {
+  background-color: var(--primary-background);
+  border-radius: 0.625rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 1rem 2rem;
+  margin: 1.5rem 0;
+}
+
+.stat-header {
+  font-size: 0.8125rem;
+  color: var(--blueish-gray);
+}
+
+.stat {
+  font-size: 1.375rem;
+  font-weight: 700;
+}
+
+.unavailable {
+  color: var(--grayish-blue);
+  opacity: 0.7;
+}
+
+.addresses-wrapper {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.address {
+  min-width: 50%;
+  max-width: 70%;
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+a {
+  color: var(--primary-font);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.addresses-icon {
+  max-width: 1.2rem;
+  max-height: 1.2rem;
+}
+
+.user-bio {
+  color: var(--secondary-font);
+}
+
+@media only screen and (max-width: 768px) {
+  .user-avatar {
+    display: none;
+  }
+
+  .inner-user-avatar {
+    display: flex;
+  }
+
+  .user-name-joining-date {
+    display: flex;
+  }
+
+  .username-data-wrapper {
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  main {
+    width: 35.8125rem;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .user-avatar {
+    display: none;
+  }
+
+  .inner-user-avatar {
+    width: 4.375rem;
+    height: 4.375rem;
+    display: flex;
+  }
+
+  .user-name-joining-date {
+    display: flex;
+  }
+
+  .username-data-wrapper {
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .username {
+    padding-top: 0;
+  }
+
+  main {
+    width: 20.4375rem;
+  }
+
+  .primary {
+    font-size: 0.8125rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  .profile-card-wrapper {
+    padding: 3rem 1.5rem;
+  }
+
+  .github-stats-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .stat-header {
+    font-size: 0.6875rem;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .stat {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .error {
+    font-size: 0.7rem;
+  }
+
+  .search-bar-input-field {
+    font-size: 0.8125rem;
+  }
+
+  .search-button {
+    font-size: 0.875rem;
+    width: 32%;
+  }
+
+  .search-bar-wrapper {
+    padding-left: 1rem;
+  }
+
+  .search-bar-input {
+    gap: 0.3rem;
+  }
+
+  ::placeholder {
+    font-size: 0.77rem;
+    letter-spacing: normal;
+  }
+
+  .search-icon {
+    width: 1.253rem;
+    height: 1.25rem;
+  }
+
+  .addresses-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+root {
+  width: 1440px;
+  height: 900px;
+}
+
+:root {
+  --strong-blue: #0079ff;
+  --light-blue: #60abff;
+  --white: #ffffff;
+  --error-red: #f74646;
+}
+
+body {
+  background-color: var(--primary-background);
+  font-family: "Space Mono", monospace;
+  font-size: 16 px;
+  color: var(--primary-font);
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body[data-theme="dark"] {
+  --primary-background: #141d2f;
+  --secondary-background: #1e2a47;
+  --primary-font: #ffffff;
+  --secondary-font: #ffffff;
+  --tertiary-font: #ffffff;
+  --shadow: none;
+}
+
+body[data-theme="light"] {
+  --primary-background: #f6f8ff;
+  --secondary-background: #fefefe;
+  --primary-font: #2b3442;
+  --secondary-font: #4b6a9b;
+  --tertiary-font: #697c9a;
+  --shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+}
