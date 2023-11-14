@@ -46,7 +46,12 @@ export const ProfileCard = ({ userData }) => {
             </div>
           </div>
 
-          <p className="user-bio primary">{userData.bio}</p>
+          {userData.bio ? (
+            <p className="user-bio primary">{userData.bio}</p>
+          ) : (
+            <p className="user-bio primary unavailable">This user has no bio</p>
+          )}
+
           <div className="github-stats-wrapper">
             <div className="stats">
               <p className="stat-header">Repos</p>

@@ -62,10 +62,13 @@ function App() {
       <main>
         <div className="upper-bar">
           <p className="logotype">devfinder</p>
-          <button className="theme-switcher" onClick={handleThemeSwitch}>
+          <button
+            className="theme-switcher theme-name"
+            onClick={handleThemeSwitch}
+          >
             {theme === "light" ? (
               <>
-                <p className="theme-name">Dark</p>
+                Dark
                 <img
                   src="./icon-moon.svg"
                   alt="icon of a moon"
@@ -74,7 +77,7 @@ function App() {
               </>
             ) : (
               <>
-                <p className="theme-name">Light</p>
+                Light
                 <img
                   src="./icon-sun.svg"
                   alt="icon of a sun"
